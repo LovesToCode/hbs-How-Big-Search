@@ -26,6 +26,14 @@
 #include <fnmatch.h>
 #include <errno.h>
 
+#define V_MAJOR 1
+#define V_MINOR 0
+#define V_PATCH 0
+#define CW_YEAR 2018
+#define AUTHOR "Steven A. (Tony) Williams"
+#define LICENSE "GPL v3"
+#define URL "https://github.com/LovesToCode/hbs-How-Big-Search"
+
 /* Masks and options determine how files are counted. */
 /* If a MASK_ bit is set, that file type is skipped. */
 #define  NO_OPTMASK         0x00000000    /* Skip nothing with no options */
@@ -133,7 +141,6 @@ static short                permMask[9] =
 static char                 perms[] = "rwxrwxrwx";
 static char                 *help[] =
 {
-   "hbs: How Big Search utility ver: 1.0.0 by: Tony Williams (2018)\n",
    "usage: hbs [<options> <path> <masks> <options> <path>]\n",
    " Arguments:\n",
    "  One or more start 'path' arguments can be used. Each will be",
@@ -499,6 +506,9 @@ void printHelp()
 {
    register int   x;
 
+   printf("hbs: v%d.%d.%d Copyright (C) %d - %s\n",
+          V_MAJOR, V_MINOR, V_PATCH, CW_YEAR, LICENSE);
+   printf("%s\n\n", URL);
    for (x = 0; *help[x]; x++)
       printf("%s\n", help[x]);
 
