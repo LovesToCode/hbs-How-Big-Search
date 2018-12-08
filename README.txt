@@ -4,11 +4,12 @@ A command line utility that searches for files, and tells you
 how big it all is.
 
 I created the first version of this utility way back in the mid 1990's
-on Slackware Linux. I didn't know how to use 'find' back then. I needed
-a way to search for files, and get the size of folders. I use it all the
-time, and it hasn't changed much since its creation. It has a lot of
-options - most of which I don't even use, so there may be bugs I've never
-encountered.
+for Windows-95 (DOS) using DJGPP. I ported it to Slackware Linux soon
+after that. I needed a way to search for files, and get a size count.
+I didn't know about the 'find' command then, so I created my own utility.
+I use it all the time, and it hasn't changed much since its creation.
+It has a lot of options - most of which I don't even use, so there may
+be bugs I've never encountered.
 
 To build the program:
 
@@ -35,7 +36,9 @@ to do that, of course.
 The following is a dump of the options help:
 
 $ hbs -h
-hbs: How Big Search utility ver: 1.0.0 by: Tony Williams (2018)
+
+hbs: v1.0.0 Copyright (C) 2018 - GPL v3
+https://github.com/LovesToCode/hbs-How-Big-Search
 
 usage: hbs [<options> <path> <masks> <options> <path>]
 
