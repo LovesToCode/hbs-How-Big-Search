@@ -30,7 +30,7 @@ $ gcc hbs.c -o hbs
 It should build properly on older 32 bit machines. It works on a Dell
 Optiplex GX270 running Ubuntu 16.04.5 LTS (32 bit).
 
-There is no man page, and I have not plans to create one. Others are welcome
+There is no man page, and I have no plans to create one. Others are welcome
 to do that, of course.
 
 The following is a dump of the options help:
